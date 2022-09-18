@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StueditActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/facview"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/ocr_a"
+            android:text="Student Entry"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"/>
+
+
+        <EditText
+            android:background="@drawable/input"
+            android:layout_marginTop="100dp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:id="@+id/stuname1"
+            android:inputType="text"
+            android:hint="Student Name"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:gravity="center"/>
+        <EditText
+            android:background="@drawable/input"
+            android:layout_below="@+id/stuname1"
+            android:layout_marginTop="30dp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:id="@+id/stumail1"
+            android:inputType="textEmailAddress"
+            android:hint="Roll No."
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+
+        <LinearLayout
+            android:background="@drawable/input"
+            android:id="@+id/grp1"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stumail1"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:id="@+id/stulec1"
+                android:inputType="text"
+                android:hint="Class"
+                android:backgroundTint="@color/white"
+                android:textAlignment="center"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info"
+                android:id="@+id/infog1"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/entry1"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/grp1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bshape"
+            android:text="Upload"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

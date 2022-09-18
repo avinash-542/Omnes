@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacentryActivity">
+
+    <TextView
+        android:fontFamily="@font/ocr_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:text="Faculty Entry"
+        android:textStyle="bold"
+        android:id="@+id/head1" />
+    <ScrollView
+        android:layout_below="@+id/head1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/facmail"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:background="@drawable/input"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_below="@+id/facmail"
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/facpass"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:background="@drawable/input"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:gravity="center"/>
+            <EditText
+                android:id="@+id/incharge"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/facpass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input"
+                android:hint="Incharge of"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:inputType="text"/>
+
+            <EditText
+                android:id="@+id/othrec"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/incharge"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input"
+                android:hint="Other classes"
+                android:gravity="center"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textAllCaps="true" />
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/othrec"
+        android:layout_marginTop="15dp"
+        android:id="@+id/othres"
+        android:hint="Subjects (same order)"
+        android:gravity="center"
+        android:inputType="text"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:background="@drawable/input"/>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adminr"
+        android:text="Is Admin"
+        android:layout_below="@+id/othres"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ishod"
+        android:text="Is HOD"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/adminr"/>
+
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/ishod"
+        android:padding="7dp"
+        android:background="@drawable/input"
+        android:id="@+id/hodto"/>
+
+
+
+    <Button
+        android:id="@+id/submit2"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input"
+        android:layout_centerHorizontal="true"
+        android:text="Upload"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/hodto"
+        android:textColor="@color/white"
+        android:layout_width="150dp"
+        android:layout_height="45dp" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "461505548459",
+    "firebase_url": "https://omnes-uno-default-rtdb.firebaseio.com",
+    "project_id": "omnes-uno",
+    "storage_bucket": "omnes-uno.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461505548459:android:e23dcd7ebaf15ffb51e7ee",
+        "android_client_info": {
+          "package_name": "com.example.omnes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461505548459-i9sp07fmo31jlnnrvq2pavvho4gopru4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuntyvs0jV2kCYKDRe9Wo24vJ1f6V5pBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461505548459-i9sp07fmo31jlnnrvq2pavvho4gopru4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461505548459:android:729f1087462afaf751e7ee",
+        "android_client_info": {
+          "package_name": "com.example.omnesscanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461505548459-i9sp07fmo31jlnnrvq2pavvho4gopru4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuntyvs0jV2kCYKDRe9Wo24vJ1f6V5pBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461505548459-i9sp07fmo31jlnnrvq2pavvho4gopru4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

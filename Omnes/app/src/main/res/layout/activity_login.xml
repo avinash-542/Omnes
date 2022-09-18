@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    tools:context=".LoginActivity">
+
+        <RelativeLayout
+            android:background="@drawable/acard"
+            android:layout_centerInParent="true"
+            android:layout_width="350dp"
+            android:layout_height="525dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/info"
+                android:backgroundTint="@color/black"
+                android:src="@drawable/ic_launcher_foreground"
+                android:textAllCaps="true"
+                android:textSize="40dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:textSize="40dp"
+                android:id="@+id/log"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="165dp"
+                android:fontFamily="@font/ocr_a"
+                android:textColor="#0055FD"/>
+            <EditText
+                android:padding="5dp"
+                android:layout_width="220dp"
+                android:layout_height="45dp"
+                android:id="@+id/username"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/inp2"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_below="@id/log"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"/>
+
+            <LinearLayout
+                android:layout_below="@+id/username"
+                android:id="@+id/passwordl"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:padding="5dp"
+                android:background="@drawable/inp2"
+                android:layout_width="220dp"
+                android:layout_height="45dp"
+                android:id="@+id/password"
+                android:hint="Password"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:inputType="textPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/username"/>
+
+                <ImageView
+                    android:id="@+id/show"
+                    android:src="@drawable/show"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginLeft="-40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fp"
+                android:text="Forgot Password?"
+                android:textColor="#004F98"
+                android:layout_marginTop="375dp"
+                android:layout_marginLeft="175dp"/>
+
+            <ImageView
+                android:id="@+id/loginbtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/passwordl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/arrow" />
+
+
+        </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#43504E4E"
+        android:id="@+id/load"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_centerVertical="true">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.ChasingDots"
+            android:padding="15dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:SpinKit_Color="#FFFFFF" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentryActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:id="@+id/facview"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/ocr_a"
+            android:text="Student Entry"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"/>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/namescont"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true">
+        <EditText
+            android:background="@drawable/input"
+            android:layout_marginTop="100dp"
+            android:layout_width="175dp"
+            android:layout_height="60dp"
+            android:id="@+id/stufname"
+            android:inputType="text"
+            android:layout_marginEnd="3dp"
+            android:hint="First Name"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:gravity="center"/>
+    <EditText
+        android:background="@drawable/input"
+        android:layout_marginTop="100dp"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:id="@+id/stulname"
+        android:inputType="text"
+        android:layout_marginStart="3dp"
+        android:hint="Last Name"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:gravity="center"/>
+</LinearLayout>
+        <EditText
+            android:background="@drawable/input"
+            android:layout_below="@+id/namescont"
+            android:layout_marginTop="30dp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:id="@+id/stumail"
+            android:inputType="textEmailAddress"
+            android:hint="Roll No."
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:gravity="center"/>
+        <EditText
+            android:background="@drawable/input"
+            android:layout_below="@+id/stumail"
+            android:layout_marginTop="30dp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:id="@+id/stupass"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+
+        <LinearLayout
+            android:background="@drawable/input"
+            android:id="@+id/grp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stupass"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:id="@+id/stulec"
+            android:inputType="text"
+            android:hint="Class"
+            android:backgroundTint="@color/white"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info"
+                android:id="@+id/infog"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/entry"
+            android:layout_below="@id/grp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:text="Upload"
+            android:background="@drawable/bshape"
+            android:textColor="@color/white"
+            android:layout_width="150dp"
+            android:layout_height="45dp" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
